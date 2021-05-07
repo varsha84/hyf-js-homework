@@ -1,15 +1,15 @@
 console.log("I love pizza");
 let pizzaName = "chicken-pizza";
-let pizzaPrice =10;
+let pizzaPrice = 10;
 let noOfPizza = 2;
 let familySize = true;
 let totalPrice;
-
-if (familySize) {
+if (familySize) 
+{
     totalPrice= pizzaPrice*2*noOfPizza;
 }
-
-else{
+else
+{
     totalPrice= pizzaPrice*noOfPizza;
 }
 let size = familySize? 'Family Size' : 'Normal Size'
