@@ -17,18 +17,15 @@ function weatherWear(temprature)
     else if(temprature <= 25 )
     {
         return "wear shorts, skirt";
-
     }
     else if(temprature <= 35)
     {
-        return "wear beach clothes"
-
+        return "wear beach clothes";
     }
     else
     {
         return" stay at home";
     }
-
 }
     console.log(weatherWear(23));
     console.log(weatherWear(8));

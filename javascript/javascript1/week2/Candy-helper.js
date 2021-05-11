@@ -36,12 +36,11 @@ function canBuyMoreCandy(amountToSpend)
     {
         totalAmount = totalAmount + boughtCandyPrices[i]
     }
-
-    const results = (totalAmount < amountToSpend ? true : false);
-    return results;
+    return totalAmount;
 }
+let totalAmount = canBuyMoreCandy(amountToSpend);
 
-if (canBuyMoreCandy(amountToSpend))
+if(totalAmount < amountToSpend)
 {
     console.log(`you still have money. You can buy more, so please do!`);
 }

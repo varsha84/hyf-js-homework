@@ -2,7 +2,7 @@
 const class07Students = [];
 function addStudentToClass(studentName)
 {
-    if(studentName === "")
+    if((studentName === "")||(studentName === null))
     {
         console.log("please provide student name");
     }
@@ -11,22 +11,21 @@ function addStudentToClass(studentName)
         class07Students.push(studentName);
         console.log(studentName + " has been added to class" )
     }
-    else if(class07Students.length < 6)
+    else if(class07Students.length > 6)
     {
-            if(class07Students.includes(studentName))
-            {
-                console.log(`Student ${studentName} is already in the class`);        
-            }
-            else
-            {
-                class07Students.push(studentName);
-                console.log(studentName + " has been added to class" )
-            }
+        console.log( studentName + " Cannot add more students to class 07");  
+            
+    }
+    else if(class07Students.includes(studentName))
+    {
+        console.log(`Student ${studentName} is already in the class`);        
     }
     else
     {
-        console.log( studentName + " Cannot add more students to class 07");  
-    }   
+        class07Students.push(studentName);
+        console.log(studentName + " has been added to class" )
+    }
+       
 }
 
 addStudentToClass("varsha");  //1
