@@ -22,10 +22,8 @@ function weatherWear(temprature)
     {
         return "wear beach clothes";
     }
-    else
-    {
-        return" stay at home";
-    }
+    
+    return" stay at home";
 }
     console.log(weatherWear(23));
     console.log(weatherWear(8));
